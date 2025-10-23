@@ -9,4 +9,4 @@ COPY requirements.txt /code/
 RUN pip install -r requirements.txt 
 
 COPY . /code/
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "code:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "djano_docker:application"]
