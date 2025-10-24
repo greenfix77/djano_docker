@@ -30,7 +30,11 @@ ALLOWED_HOSTS = [
     'www.shop.rooobah.ir',
      
 ]
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://shop.rooobah.ir',
+    'http://shop.rooobah.ir', # اگر از http هم استفاده می‌کنید
+    
+]
 
 # Application definition
 
